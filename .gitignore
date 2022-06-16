@@ -14,3 +14,4 @@ src/ExcitelLead.API/obj/
 src/ExcitelLead.API/bin/
 /src/ExcitelLead.API/ExcitelLead.API.csproj.user
 /src/ExcitelLead.DB/ExcitelLead.DB.sqlproj.user
+src/ExcitelLead.DB/ExcitelLead.DB.dbmdl
