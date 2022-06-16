@@ -1,0 +1,16 @@
+
+src/.vs/
+src/ExcitelLead.Domain/.vs/
+src/ExcitelLead.Domain/obj/
+src/ExcitelLead.Domain/bin/
+src/ExcitelLead.Infrastructure/obj/
+src/ExcitelLead.Infrastructure/bin/
+src/ExcitelLead.Application/obj/
+src/ExcitelLead.Application/bin/
+src/ExcitelLead.DB/obj/
+src/ExcitelLead.DB/bin/
+*.bak
+src/ExcitelLead.API/obj/
+src/ExcitelLead.API/bin/
+/src/ExcitelLead.API/ExcitelLead.API.csproj.user
+/src/ExcitelLead.DB/ExcitelLead.DB.sqlproj.user

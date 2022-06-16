@@ -1,0 +1,12 @@
+﻿CREATE TABLE [dbo].[Lead]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+	[Name] VARCHAR(255) NOT NULL, 
+    [SubAreaId] INT NOT NULL, 
+    [Address] VARCHAR(255) NOT NULL, 
+    [MobileNumber] VARCHAR(255) NULL,
+    [Email] VARCHAR(255) NULL,
+    [Created] DATETIME NULL DEFAULT CURRENT_TIMESTAMP, 
+    [Modified] DATETIME NULL, 
+    CONSTRAINT [FK_Lead_SubArea] FOREIGN KEY (SubAreaId) REFERENCES SubArea(Id)
+)

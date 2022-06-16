@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[SubArea]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+	[Name] VARCHAR(255) NOT NULL, 
+    [PINCode] INT NOT NULL
+)

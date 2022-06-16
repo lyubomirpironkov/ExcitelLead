@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcitelLead.Domain", "ExcitelLead.Domain\ExcitelLead.Domain.csproj", "{1FFF1778-ADAA-490C-9FAD-A0E5AE27C290}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcitelLead.Infrastructure", "ExcitelLead.Infrastructure\ExcitelLead.Infrastructure.csproj", "{E96300DB-886D-4CC5-BF54-CCBD691CFA80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcitelLead.Application", "ExcitelLead.Application\ExcitelLead.Application.csproj", "{A6658DD2-449D-4CA6-BFEC-B8E561EB4AE9}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ExcitelLead.DB", "ExcitelLead.DB\ExcitelLead.DB.sqlproj", "{193B474A-310C-4C33-8EEE-CF2A69EC973C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcitelLead.API", "ExcitelLead.API\ExcitelLead.API.csproj", "{E84A0E17-75B6-4A01-9704-1278ECD4F851}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FFF1778-ADAA-490C-9FAD-A0E5AE27C290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FFF1778-ADAA-490C-9FAD-A0E5AE27C290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FFF1778-ADAA-490C-9FAD-A0E5AE27C290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FFF1778-ADAA-490C-9FAD-A0E5AE27C290}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E96300DB-886D-4CC5-BF54-CCBD691CFA80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E96300DB-886D-4CC5-BF54-CCBD691CFA80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E96300DB-886D-4CC5-BF54-CCBD691CFA80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E96300DB-886D-4CC5-BF54-CCBD691CFA80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6658DD2-449D-4CA6-BFEC-B8E561EB4AE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6658DD2-449D-4CA6-BFEC-B8E561EB4AE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6658DD2-449D-4CA6-BFEC-B8E561EB4AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6658DD2-449D-4CA6-BFEC-B8E561EB4AE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{193B474A-310C-4C33-8EEE-CF2A69EC973C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{193B474A-310C-4C33-8EEE-CF2A69EC973C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{193B474A-310C-4C33-8EEE-CF2A69EC973C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{193B474A-310C-4C33-8EEE-CF2A69EC973C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{193B474A-310C-4C33-8EEE-CF2A69EC973C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{193B474A-310C-4C33-8EEE-CF2A69EC973C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E84A0E17-75B6-4A01-9704-1278ECD4F851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E84A0E17-75B6-4A01-9704-1278ECD4F851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E84A0E17-75B6-4A01-9704-1278ECD4F851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E84A0E17-75B6-4A01-9704-1278ECD4F851}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57A91DDC-661D-43B7-A184-4F590B77B1B4}
+	EndGlobalSection
+EndGlobal
