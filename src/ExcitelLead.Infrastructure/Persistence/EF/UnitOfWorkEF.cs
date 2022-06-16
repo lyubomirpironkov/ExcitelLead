@@ -18,16 +18,6 @@ namespace ExcitelLead.Infrastructure.Persistence.EF
             SubAreaRepository = new SubAreaRepositoryEF(this.context);
         }
 
-        public async Task<int> SaveAsync()
-        {
-            return await context.SaveChangesAsync().ConfigureAwait(false);
-        }
-
-        public async Task<int> SaveAsync(CancellationToken cancellationToken)
-        {
-            return await context.SaveChangesAsync(cancellationToken).ConfigureAwait(false);
-        }
-
         public ValueTask DisposeAsync()
         {
             return context.DisposeAsync();

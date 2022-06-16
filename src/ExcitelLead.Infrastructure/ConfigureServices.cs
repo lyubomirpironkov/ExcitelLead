@@ -11,15 +11,20 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
+            // Add EF db context
             services.AddDbContext<AppDbContext>(options =>
                     options.UseSqlServer(
                         configuration.GetConnectionString("DefaultConnection"),
                         b => b.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName)));
 
-            services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect(configuration.GetConnectionString("DefaultConnectionRedis")));
+            // Add redis connection/db
+            services.AddSingleton<IConnectionMultiplexer>(
+                ConnectionMultiplexer.Connect(configuration.GetConnectionString("DefaultConnectionRedis")));
 
             services.AddScoped<IAppDbContext>(provider => provider.GetRequiredService<AppDbContext>());
 
+            // Add separate units of work for each type of db
+            // in which the connections to the databases are injected
             services.AddScoped<IUnitOfWorkEF, UnitOfWorkEF>();
             services.AddSingleton<IUnitOfWorkRedis>(serviceProvider =>
                 new UnitOfWorkRedis(serviceProvider.GetRequiredService<IConnectionMultiplexer>()));

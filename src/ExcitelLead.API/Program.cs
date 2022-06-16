@@ -1,12 +1,12 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Add services to the container for each layer.
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddWebUIServices();
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+// Swagger/OpenAPI
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -19,14 +19,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 
     app.UseDeveloperExceptionPage();
-    //app.UseMigrationsEndPoint();
+    // app.UseMigrationsEndPoint(); removing migration
 }
 
-//app.UseAuthorization();
+// app.UseAuthorization(); removing authorization
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-//app.MapControllers();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller}/{action=Index}/{id?}");

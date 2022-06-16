@@ -1,6 +1,5 @@
 ﻿using ExcitelLead.Application.Common.Exceptions;
 using ExcitelLead.Application.Common.Interfaces;
-using ExcitelLead.Domain.Entities;
 using MediatR;
 
 namespace ExcitelLead.Application.Leads.Commands.UpdateLead

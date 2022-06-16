@@ -1,6 +1,5 @@
 ﻿using ExcitelLead.Application.Common.Exceptions;
 using ExcitelLead.Application.Common.Interfaces;
-using ExcitelLead.Domain.Entities;
 using MediatR;
 
 namespace ExcitelLead.Application.Leads.Queries.GetLeadById
@@ -25,7 +24,7 @@ namespace ExcitelLead.Application.Leads.Queries.GetLeadById
 
             if (leadEntity == null)
             {
-                throw new NotFoundException(nameof(Lead), request.Id);
+                throw new NotFoundException("Lead", request.Id);
             }
 
             return new LeadDTO
