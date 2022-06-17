@@ -9,4 +9,4 @@ Build and start the API project
 ### Changing the persistance:
 
 There's no need to change the code.
-You just need to change the "UseRedis" (true or false) option in the appsettings.json configuration file in the ExcitelLead.API project
+You just need to change the "UseRedis" option (true or false) in the appsettings.json configuration file in the ExcitelLead.API project
