@@ -17,8 +17,4 @@
     <ProjectReference Include="..\ExcitelLead.Application\ExcitelLead.Application.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Persistence\Common\" />
-  </ItemGroup>
-
 </Project>

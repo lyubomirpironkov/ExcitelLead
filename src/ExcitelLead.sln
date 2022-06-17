@@ -7,11 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcitelLead.Domain", "Excit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcitelLead.Infrastructure", "ExcitelLead.Infrastructure\ExcitelLead.Infrastructure.csproj", "{E96300DB-886D-4CC5-BF54-CCBD691CFA80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcitelLead.Application", "ExcitelLead.Application\ExcitelLead.Application.csproj", "{A6658DD2-449D-4CA6-BFEC-B8E561EB4AE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcitelLead.Application", "ExcitelLead.Application\ExcitelLead.Application.csproj", "{A6658DD2-449D-4CA6-BFEC-B8E561EB4AE9}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ExcitelLead.DB", "ExcitelLead.DB\ExcitelLead.DB.sqlproj", "{193B474A-310C-4C33-8EEE-CF2A69EC973C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcitelLead.API", "ExcitelLead.API\ExcitelLead.API.csproj", "{E84A0E17-75B6-4A01-9704-1278ECD4F851}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcitelLead.API", "ExcitelLead.API\ExcitelLead.API.csproj", "{E84A0E17-75B6-4A01-9704-1278ECD4F851}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcitelLead.IntegrationTests", "ExcitelLead.IntegrationTests\ExcitelLead.IntegrationTests.csproj", "{6C852F8B-92D4-4039-A854-875A35BC1B2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{E84A0E17-75B6-4A01-9704-1278ECD4F851}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E84A0E17-75B6-4A01-9704-1278ECD4F851}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E84A0E17-75B6-4A01-9704-1278ECD4F851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C852F8B-92D4-4039-A854-875A35BC1B2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C852F8B-92D4-4039-A854-875A35BC1B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C852F8B-92D4-4039-A854-875A35BC1B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C852F8B-92D4-4039-A854-875A35BC1B2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

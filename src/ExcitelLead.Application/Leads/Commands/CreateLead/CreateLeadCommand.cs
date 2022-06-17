@@ -21,7 +21,7 @@ namespace ExcitelLead.Application.Leads.Commands.CreateLead
     {
         private readonly IUnitOfWork unitOfWork;
 
-        public CreateLeadCommandHandler(IUnitOfWorkEF unitOfWork)
+        public CreateLeadCommandHandler(IUnitOfWork unitOfWork)
         {
             this.unitOfWork = unitOfWork;
         }

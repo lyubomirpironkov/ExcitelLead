@@ -23,7 +23,7 @@ namespace ExcitelLead.Application.Leads.Commands.UpdateLead
     {
         private readonly IUnitOfWork unitOfWork;
 
-        public UpdateTodoItemCommandHandler(IUnitOfWorkEF unitOfWork)
+        public UpdateTodoItemCommandHandler(IUnitOfWork unitOfWork)
         {
             this.unitOfWork = unitOfWork;
         }
@@ -38,6 +38,7 @@ namespace ExcitelLead.Application.Leads.Commands.UpdateLead
             }
 
             entity.Address = request.Address;
+            entity.Name = request.Name;
             entity.MobileNumber = request.MobileNumber;
             entity.Email = request.Email;
             entity.SubAreaId = request.SubAreaId;

@@ -13,7 +13,7 @@ namespace ExcitelLead.Application.Leads.Queries.GetLeadById
     {
         private readonly IUnitOfWork unitOfWork;
 
-        public GetLeadByIdQueryHandler(IUnitOfWorkEF unitOfWork)
+        public GetLeadByIdQueryHandler(IUnitOfWork unitOfWork)
         {
             this.unitOfWork = unitOfWork;
         }
@@ -34,7 +34,9 @@ namespace ExcitelLead.Application.Leads.Queries.GetLeadById
                 Email = leadEntity.Email,
                 MobileNumber = leadEntity.MobileNumber,
                 Name = leadEntity.Name,
-                SubAreaId = leadEntity.SubAreaId
+                SubAreaId = leadEntity.SubAreaId,
+                Created = leadEntity.Created,
+                Modified = leadEntity.Modified
             };
         }
     }

@@ -8,7 +8,7 @@ namespace ExcitelLead.Infrastructure.Persistence.EF
     {
         public virtual DbSet<Lead> Lead { get; set; }
 
-        public virtual DbSet<SubArea> SubAreas { get; set; }
+        public virtual DbSet<SubArea> SubArea { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> dbContextOptions)
             : base(dbContextOptions)

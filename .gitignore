@@ -16,3 +16,5 @@ src/ExcitelLead.API/bin/
 /src/ExcitelLead.DB/ExcitelLead.DB.sqlproj.user
 src/ExcitelLead.DB/ExcitelLead.DB.dbmdl
 /src/ExcitelLead.DB/ExcitelLead.DB.jfm
+/src/ExcitelLead.IntegrationTests/obj
+/src/ExcitelLead.IntegrationTests/bin

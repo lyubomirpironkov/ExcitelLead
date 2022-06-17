@@ -10,7 +10,7 @@ namespace ExcitelLead.Application.Leads.Commands.DeleteLead
     {
         private readonly IUnitOfWork unitOfWork;
 
-        public DeleteLeadCommandHandler(IUnitOfWorkEF unitOfWork)
+        public DeleteLeadCommandHandler(IUnitOfWork unitOfWork)
         {
             this.unitOfWork = unitOfWork;
         }

@@ -1,6 +1,8 @@
 ﻿using ExcitelLead.Application.Common.Interfaces;
+using ExcitelLead.Infrastructure.Persistence.Common;
 using ExcitelLead.Infrastructure.Persistence.EF;
-using ExcitelLead.Infrastructure.Persistence.Redis;
+using ExcitelLead.Infrastructure.Persistence.EF.Repositories;
+using ExcitelLead.Infrastructure.Persistence.Redis.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using StackExchange.Redis;
@@ -23,11 +25,21 @@ namespace Microsoft.Extensions.DependencyInjection
 
             services.AddScoped<IAppDbContext>(provider => provider.GetRequiredService<AppDbContext>());
 
-            // Add separate units of work for each type of db
-            // in which the connections to the databases are injected
-            services.AddScoped<IUnitOfWorkEF, UnitOfWorkEF>();
-            services.AddSingleton<IUnitOfWorkRedis>(serviceProvider =>
-                new UnitOfWorkRedis(serviceProvider.GetRequiredService<IConnectionMultiplexer>()));
+            if (configuration["UseRedis"].ToLower() == "true" )
+            {
+                services.AddScoped<ILeadRepository>(serviceProvider =>
+                    new LeadRepositoryRedis(serviceProvider.GetRequiredService<IConnectionMultiplexer>()));
+            }
+            else
+            {
+                services.AddScoped<ILeadRepository>(serviceProvider =>
+                    new LeadRepositoryEF(serviceProvider.GetRequiredService<AppDbContext>()));
+            }
+            
+            services.AddScoped<ISubAreaRepository>(serviceProvider =>
+                new SubAreaRepositoryEF(serviceProvider.GetRequiredService<AppDbContext>()));
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             return services;
         }

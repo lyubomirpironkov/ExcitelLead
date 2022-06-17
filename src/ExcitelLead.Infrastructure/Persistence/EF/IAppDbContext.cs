@@ -7,6 +7,6 @@ namespace ExcitelLead.Infrastructure.Persistence.EF
     {
         DbSet<Lead> Lead { get; }
 
-        DbSet<SubArea> SubAreas { get; }
+        DbSet<SubArea> SubArea { get; }
     }
 }
