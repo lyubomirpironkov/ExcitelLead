@@ -8,11 +8,5 @@ Build and start the API project
 
 ### Changing the persistance:
 
-Change the unit of work interface injected into the Query or Command constructors in the application layer/project.
-
-<ul>
-    <li>GetLeadByIdQuery.cs -> change the IUnitOfWorkEF to IUnitOfWorkRedis</li>
-    <li>CreateLeadCommand.cs -> change the IUnitOfWorkEF interface to IUnitOfWorkRedis</li>
-    <li>DeleteLeadCommand.cs -> change the IUnitOfWorkEF interface to IUnitOfWorkRedis</li>
-    <li>UpdateLeadCommand.cs -> change the IUnitOfWorkEF interface to IUnitOfWorkRedis</li>
-</ul>
+There's no need to change the code.
+You just need to change the "UseRedis" option in the appsettings.json configuration file in the ExcitelLead.API project
